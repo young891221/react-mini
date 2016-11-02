@@ -9,15 +9,13 @@ class RandomNumber extends React.Component {
         //suer(props)는 props까지 사용한다는 것을 의미한다.
         super(props);
         this.state = {
-            value: Math.round(Math.random()*100)
+            value: 100
         };
         this._update = this._updateValue.bind(this);
     }
 
-    _updateValue(randomValue){
-        this.setState({
-            value: Math.round(Math.random()*100)
-        });
+    _updateValue(){
+        this.setState({ value: Math.round(Math.random()*100) });
     }
 
     render(){

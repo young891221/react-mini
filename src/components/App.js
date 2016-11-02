@@ -15,34 +15,24 @@ class App extends React.Component {
 
     constructor(props){
         super(props);
-        this.state = {
-          value: Math.round(Math.random()*100)
-        };
-        this._updateValue = this._updateValue.bind(this);
-    }
-
-    _updateValue(randomValue){
-        this.setState({
-            value: randomValue
-        });
     }
 
     render(){ //render()는 데이터 바인딩시켜주는 요소
         return ( //JSX에서는 xml syntax를 자동으로 native Javascript로 변환해 준다
             <div>
-              <h1>Hello React</h1>
-              <Header title={ this.props.headerTitle }/>
-              <Content title={ this.props.contentTitle }/>
-              <StateExample/>
-              <RandomNumber/>
+                <h1>Hello React!!</h1>
+                <Header title={ this.props.headerTitle }/>
+                <Content title={ this.props.contentTitle }/>
+                <StateExample/>
+                <RandomNumber/>
             </div>
         );
     }
 }
 
 App.defaultProps = {
-    headerTitle: 'Default header',
-    contentTitle: 'Default contentTitle'
+    headerTitle: 'Header 영역입니다',
+    contentTitle: '제목은 뭘로 할까낭'
 };
 
 export default App;

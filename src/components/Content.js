@@ -11,7 +11,7 @@ class Content extends React.Component {
     }
 }
 
-Content.propTypes = {
+Content.propTypes = { //validate(https://facebook.github.io/react/docs/components-and-props.html)
     title: React.PropTypes.string.isRequired
 };
 

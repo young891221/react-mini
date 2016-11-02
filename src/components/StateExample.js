@@ -1,7 +1,7 @@
 import React from 'react';
 
 class StateExample extends React.Component {
-   constructor(props) { //state초기값 설정시 constructor안에서 설정
+   constructor(props) { //state초기값 설정시 constructor안에서 설정(이게 가장 좋음)
       super(props);
 
       this.state = {
@@ -10,7 +10,7 @@ class StateExample extends React.Component {
      };
    }
 
-   _updateHeader(text){
+   _updateHeader(text){ //버튼이벤트 하나 추가
        this.setState({
            header: "Header has changed"
        });
