@@ -4,6 +4,7 @@ import Header from './Header';
 import Content from './Content';
 import StateExample from './StateExample';
 import RandomNumber from './RandomNumber';
+import MapExample from './MapExample';
 //import - ES6에 새로 도입된 문법 == var React = require("react");
 
 /*
@@ -25,6 +26,7 @@ class App extends React.Component {
                 <Content title={ this.props.contentTitle }/>
                 <StateExample/>
                 <RandomNumber/>
+                <MapExample />
             </div>
         );
     }
